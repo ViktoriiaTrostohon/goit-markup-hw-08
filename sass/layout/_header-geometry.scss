@@ -3,11 +3,45 @@
 }
 
 .header-section {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-.header-container {
-  display: flex;
-  width: 1200px;
+@media screen and (min-width: 768px) {
+  .header-section {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
+
+@media screen and (min-width: 1200px) {
+  .header-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+// .header-container {
+//   // display: flex;
+//   max-width: 479px;
+//   // align-items: center;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .header-container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .header-container {
+//     margin: 0 auto;
+//   }
+// }
+
+// .header-container {
+//   display: flex;
+//   width: 1200px;
+// }
