@@ -244,7 +244,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
-    background-image: url("../images/hero-desktop.jpg");
+    background-image: url(../images/hero-desktop.jpg);
   }
   .hero__title {
     font-size: 44px;
@@ -257,7 +257,7 @@ body {
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero-desktop@2x.jpg");
+    background-image: url(../images/hero-desktop@2x.jpg);
   }
 }
 
