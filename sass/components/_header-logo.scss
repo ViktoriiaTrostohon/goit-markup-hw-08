@@ -1,18 +1,35 @@
 .logo {
   font-family: Raleway, sans-serif;
-  @include font(26px, 700);
-  line-height: 1.19;
+  @include font(24px, 700);
+  line-height: 1.17;
   text-decoration: none;
 
   &__name-one {
     color: var(--accent-color);
   }
+
   &__name-two {
     color: var(--title-text-color);
   }
 }
 
 .logo-geometry {
-  margin-right: 93px;
+  margin-right: 276px;
   padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .logo-geometry {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    @include font(26px, 700);
+  }
+
+  .logo-geometry {
+    margin-right: 93px;
+  }
 }
