@@ -177,7 +177,7 @@ body {
 .hero {
   min-width: 480px;
   height: 400px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero-phone.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-phone.jpg);
   background-color: #c4c4c4;
   background-size: cover;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ body {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("./images/hero-phone@2x.jpg");
+    background-image: url(../images/hero-phone@2x.jpg);
   }
 }
 
