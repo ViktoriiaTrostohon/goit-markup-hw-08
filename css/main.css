@@ -181,7 +181,7 @@ body {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/hero-phone.jpg);
+    url(../images/hero-phone.jpg);
   background-color: #c4c4c4;
   background-size: cover;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ body {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url(./images/hero-phone@2x.jpg);
+    background-image: url(../images/hero-phone@2x.jpg);
   }
 }
 
@@ -229,7 +229,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(./images/hero-tablet.jpg);
+    background-image: url(../images/hero-tablet.jpg);
   }
 }
 
@@ -237,14 +237,14 @@ body {
   screen and (min-width: 768px) and (min-resolution: 192dpi),
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(./images/hero-tablet@2x.jpg);
+    background-image: url(../images/hero-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
-    background-image: url(./images/hero-desktop.jpg);
+    background-image: url(../images/hero-desktop.jpg);
   }
   .hero__title {
     font-size: 44px;
@@ -257,7 +257,7 @@ body {
   screen and (min-width: 1200px) and (min-resolution: 192dpi),
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(./images/hero-desktop@2x.jpg);
+    background-image: url(../images/hero-desktop@2x.jpg);
   }
 }
 
