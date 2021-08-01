@@ -177,20 +177,14 @@ body {
 .hero {
   min-width: 480px;
   height: 400px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero-phone.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-phone.jpg");
   background-color: #c4c4c4;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/hero-phone@2x.jpg");
   }
@@ -217,34 +211,30 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: color var(--duration) var(--speed),
-    background-color var(--duration) var(--speed);
+  transition: color var(--duration) var(--speed), background-color var(--duration) var(--speed);
 }
 
-.hero__button:hover,
-.hero__button:focus {
+.hero__button:hover, .hero__button:focus {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../images/hero-tablet.jpg");
+    background-image: url(/images/hero-tablet.jpg);
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero-tablet@2x.jpg");
+    background-image: url(/images/hero-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
-    background-image: url(../images/hero-desktop.jpg);
+    background-image: url(/images/hero-desktop.jpg);
   }
   .hero__title {
     font-size: 44px;
@@ -253,11 +243,9 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-desktop@2x.jpg);
+    background-image: url(/images/hero-desktop@2x.jpg);
   }
 }
 
@@ -305,12 +293,9 @@ body {
   height: 581px;
   padding: 40px;
   background-color: var(--primary-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform var(--duration) var(--speed),
-    opacity var(--duration) var(--speed),
-    visibility var(--duration) var(--speed);
+  transition: transform var(--duration) var(--speed), opacity var(--duration) var(--speed), visibility var(--duration) var(--speed);
 }
 
 .close-button {
@@ -440,9 +425,7 @@ body {
   padding: 4px 3px 2px 3px;
   border-color: var(--accent-color);
   background-repeat: no-repeat;
-  transition: background-color var(--duration) var(--speed),
-    background-image var(--duration) var(--speed),
-    border-color var(--duration) var(--speed);
+  transition: background-color var(--duration) var(--speed), background-image var(--duration) var(--speed), border-color var(--duration) var(--speed);
 }
 
 .modal-form-policy-link {
@@ -469,18 +452,14 @@ body {
   cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  transition: border var(--duration) var(--speed),
-    background-color var(--duration) var(--speed),
-    box-shadow var(--duration) var(--speed);
+  transition: border var(--duration) var(--speed), background-color var(--duration) var(--speed), box-shadow var(--duration) var(--speed);
 }
 
 .modal-form-button:hover {
   border: var(--modal-button-hover);
   background-color: var(--modal-button-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: border var(--duration) var(--speed),
-    background-color var(--duration) var(--speed),
-    box-shadow var(--duration) var(--speed);
+  transition: border var(--duration) var(--speed), background-color var(--duration) var(--speed), box-shadow var(--duration) var(--speed);
 }
 
 .advantages-geometry {
@@ -624,8 +603,7 @@ body {
 
 .team__employee-card {
   background-color: var(--primary-white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -673,16 +651,13 @@ body {
   padding: 12px;
   fill: var(--main-icon-color);
   border-radius: 50%;
-  transition: fill var(--duration) var(--speed),
-    background-color var(--duration) var(--speed);
+  transition: fill var(--duration) var(--speed), background-color var(--duration) var(--speed);
 }
 
-.networks__link:hover,
-.networks__link:focus {
+.networks__link:hover, .networks__link:focus {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
-  transition: fill var(--duration) var(--speed),
-    background-color var(--duration) var(--speed);
+  transition: fill var(--duration) var(--speed), background-color var(--duration) var(--speed);
 }
 
 .clients {
@@ -704,12 +679,10 @@ body {
   fill: var(--main-icon-color);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
-  transition: fill var(--duration) var(--speed),
-    border var(--duration) var(--speed);
+  transition: fill var(--duration) var(--speed), border var(--duration) var(--speed);
 }
 
 .footer {
@@ -749,8 +722,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.address__google-maps:hover,
-.address__google-maps:focus {
+.address__google-maps:hover, .address__google-maps:focus {
   color: var(--accent-color);
   transition: color var(--duration) var(--speed);
 }
@@ -764,8 +736,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address__virtual-link:hover,
-.address__virtual-link:focus {
+.address__virtual-link:hover, .address__virtual-link:focus {
   color: var(--accent-color);
   transition: color var(--duration) var(--speed);
 }
@@ -804,8 +775,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.networks__link-grey:hover,
-.networks__link-grey:focus {
+.networks__link-grey:hover, .networks__link-grey:focus {
   background-color: var(--accent-color);
 }
 
@@ -904,15 +874,11 @@ body {
   background-color: #f5f4fa;
 }
 
-.buttons__portfolio-button:hover,
-.buttons__portfolio-button:focus {
+.buttons__portfolio-button:hover, .buttons__portfolio-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color var(--duration) var(--speed),
-    background-color var(--duration) var(--speed),
-    box-shadow var(--duration) var(--speed);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color var(--duration) var(--speed), background-color var(--duration) var(--speed), box-shadow var(--duration) var(--speed);
 }
 
 .buttons__portfolio-button--current {
@@ -944,8 +910,7 @@ body {
 }
 
 .products__item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
@@ -968,15 +933,13 @@ body {
   line-height: 1.56;
   color: var(--primary-white-color);
   background-color: rgba(33, 150, 243, 0.9);
-  transition: transform var(--duration) var(--speed),
-    opacity var(--duration) var(--speed);
+  transition: transform var(--duration) var(--speed), opacity var(--duration) var(--speed);
 }
 
 .products__link:hover .products__overlay,
 .products__link:focus .products__overlay {
   transform: translateY(0%);
-  transition: transform var(--duration) var(--speed),
-    opacity var(--duration) var(--speed);
+  transition: transform var(--duration) var(--speed), opacity var(--duration) var(--speed);
   opacity: 1;
 }
 
