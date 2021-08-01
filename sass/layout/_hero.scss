@@ -67,6 +67,11 @@
   .hero {
     height: 600px;
     background-image: url(/images/hero-desktop.jpg);
+
+    &__title {
+      @include font(44px, 900);
+      line-height: 1.36;
+    }
   }
 
   @media (min-device-pixel-ratio: 2),
