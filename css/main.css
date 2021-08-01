@@ -463,48 +463,42 @@ body {
 }
 
 .advantages-geometry {
-  padding-bottom: 94px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-geometry {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .pros {
   display: flex;
+  flex-direction: column;
 }
 
-.pros__pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.pros__list-item:not(last-child) {
   margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  background-color: #f5f4fa;
 }
 
-.pros__list-item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .pros {
+    flex-direction: row;
+    width: calc((100% - 60px) / 2);
+  }
 }
 
-.pros__list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.pros__name {
-  padding-bottom: 10px;
-  color: var(--title-text-color);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.pros__content {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-}
-
-.pros-geometry {
-  margin-right: -30px;
+@media screen and (min-width: 1200px) {
+  .pros {
+    width: 100%;
+  }
+  .pros__list-item {
+    margin-right: 30px;
+  }
+  .pros-geometry {
+    margin-right: -30px;
+  }
 }
 
 .works-geometry {
