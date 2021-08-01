@@ -476,28 +476,76 @@ body {
 .pros {
   display: flex;
   flex-direction: column;
+  width: 450px;
 }
 
-.pros__list-item:not(last-child) {
+.pros__list-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.pros__pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+}
+
+.pros__name {
+  padding-bottom: 10px;
+  color: var(--title-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pros__content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
 }
 
 @media screen and (min-width: 768px) {
   .pros {
     flex-direction: row;
-    width: calc((100% - 60px) / 2);
+    flex-wrap: wrap;
+    width: 738px;
+  }
+  .pros__list-item {
+    width: 354px;
+    height: 251px;
+  }
+  .pros__list-item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .pros__list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .pros__name {
+    text-align: left;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .pros {
-    width: 100%;
+    width: 1170px;
+    height: 251px;
+    flex-wrap: nowrap;
   }
   .pros__list-item {
+    width: calc((100% - 120px) / 4);
+  }
+  .pros__list-item:nth-child(n + 1) {
+    margin-bottom: 0;
+  }
+  .pros__list-item:not(:last-child) {
     margin-right: 30px;
   }
-  .pros-geometry {
-    margin-right: -30px;
+  .pros__name {
+    line-height: 1.17;
   }
 }
 
