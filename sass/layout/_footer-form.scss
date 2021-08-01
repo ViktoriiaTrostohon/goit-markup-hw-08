@@ -1,0 +1,64 @@
+.footer-form-geometry {
+  padding-top: 72px;
+  padding-bottom: 94px;
+}
+
+.contact-form__feedback {
+  margin-bottom: 20px;
+  @include font(14px, 700);
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+
+.form-field {
+  position: relative;
+  @include centered-flex(flex, center, center);
+
+  &__label {
+    display: inline-block;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--footer-color);
+    color: var(--primary-white-color);
+
+    &::placeholder {
+      @include font(16px, 400);
+      line-height: 1.25;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &__button {
+    @include centered-flex(flex, center, center);
+    width: 200px;
+    height: 50px;
+    padding: 10px 62px 10px 29px;
+    @include font(16px, 700);
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: var(--accent-color);
+    border-radius: 4px;
+    background-color: var(--accent-color);
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    margin-right: 13px;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,29 @@
+.join-us {
+  display: block;
+  height: 80px;
+
+  &__footer-heading {
+    margin-bottom: 20px;
+    align-items: baseline;
+    @include font(14px, 700);
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+  }
+}
+
+.footer-networks {
+  margin-right: 93px;
+  padding-top: 75px;
+  padding-bottom: 97px;
+}
+
+.networks__link-grey {
+  fill: var(--primary-white-color);
+  background: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}

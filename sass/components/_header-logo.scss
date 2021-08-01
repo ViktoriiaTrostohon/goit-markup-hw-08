@@ -1,0 +1,18 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  @include font(26px, 700);
+  line-height: 1.19;
+  text-decoration: none;
+
+  &__name-one {
+    color: var(--accent-color);
+  }
+  &__name-two {
+    color: var(--title-text-color);
+  }
+}
+
+.logo-geometry {
+  margin-right: 93px;
+  padding-left: 0;
+}
