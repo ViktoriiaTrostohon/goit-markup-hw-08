@@ -53,6 +53,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .our-clients {
+    padding-top: 94px;
+  }
+
   .clients__item {
     width: calc((100% - 150px) / 6);
 
