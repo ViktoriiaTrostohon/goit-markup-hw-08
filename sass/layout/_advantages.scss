@@ -10,9 +10,9 @@
 }
 
 .pros {
-  display: flex;
-  flex-direction: column;
-  width: 450px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 
   &__list-item:not(:last-child) {
     margin-bottom: 30px;
@@ -42,9 +42,10 @@
 
 @media screen and (min-width: 768px) {
   .pros {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 738px;
+    width: 100%;
 
     &__list-item {
       width: 354px;
@@ -70,7 +71,6 @@
     width: 1170px;
     height: 251px;
     flex-wrap: nowrap;
-    // justify-content: center;
 
     &__list-item {
       width: calc((100% - 120px) / 4);
