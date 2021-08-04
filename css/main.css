@@ -776,24 +776,18 @@ body {
   background-color: var(--footer-color);
 }
 
-.footer-container {
-  display: flex;
-}
-
 .footer-contacts {
-  display: flex;
-  flex-direction: column;
-}
-
-.contacts-geometry {
-  margin-right: 70px;
-  padding: 60px 0px;
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .logo-footer {
-  margin-right: 0px;
+  display: block;
   margin-bottom: 20px;
-  padding-left: 0;
 }
 
 .logo__name-two--white {
@@ -829,16 +823,18 @@ body {
 }
 
 .address__map {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address__email {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .join-us {
   display: block;
   height: 80px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .join-us__footer-heading {
@@ -851,12 +847,6 @@ body {
   color: var(--primary-white-color);
 }
 
-.footer-networks {
-  margin-right: 93px;
-  padding-top: 75px;
-  padding-bottom: 97px;
-}
-
 .networks__link-grey {
   fill: var(--primary-white-color);
   background: rgba(255, 255, 255, 0.1);
@@ -867,8 +857,7 @@ body {
 }
 
 .footer-form-geometry {
-  padding-top: 72px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
 .contact-form__feedback {
@@ -877,24 +866,26 @@ body {
   font-weight: 700;
   line-height: 1.17;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-white-color);
 }
 
 .form-field {
-  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.form-field__label {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.form-field__label {
-  display: inline-block;
-}
-
 .form-field__input {
-  width: 358px;
+  min-width: 290px;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -912,9 +903,10 @@ body {
 }
 
 .form-field__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   width: 200px;
   height: 50px;
   padding: 10px 62px 10px 29px;
@@ -932,10 +924,16 @@ body {
 .form-field__icon {
   position: absolute;
   top: 50%;
-  right: 0;
+  left: 75%;
   transform: translate(-50%, -50%);
   margin-right: 13px;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .form-field__input {
+    width: 100%;
+  }
 }
 
 .buttons {
