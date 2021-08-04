@@ -12,6 +12,11 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
