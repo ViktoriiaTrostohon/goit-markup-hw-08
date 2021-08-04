@@ -1010,12 +1010,6 @@ body {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .form-field__input {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer-form-geometry {
     padding-bottom: 0;
