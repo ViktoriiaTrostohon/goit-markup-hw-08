@@ -1,8 +1,25 @@
-.buttons {
-  @include centered-flex(flex, flex-start, center);
+.section {
+  padding-top: 60px;
+}
 
-  &__content:not(:last-child):not(:last-child) {
-    padding-right: 8px;
+.buttons-geometry {
+  margin-bottom: 40px;
+}
+
+.buttons {
+  @include centered-flex(flex, center, flex-start);
+  flex-wrap: wrap;
+
+  &__content {
+    margin-right: 8px;
+
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
   }
 
   &__portfolio-button {
@@ -33,7 +50,37 @@
   }
 }
 
-.buttons-geometry {
-  margin-bottom: 50px;
-  padding-right: -8px;
+@media screen and (min-width: 387px) and (max-width: 767px) {
+  .buttons__content:nth-child(2n + 2) {
+    margin-right: 8px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-geometry {
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .buttons__content:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons-geometry {
+    margin-bottom: 50px;
+  }
 }
