@@ -1,16 +1,3 @@
-// @media screen and (min-width: 320px) and (max-width: 422px) {
-//   .products__overlay {
-//     transform: translateY(100%);
-//     padding: 15% 5%;
-//     @include font(16px, 400);
-//   }
-
-//   .products__link:hover &,
-//   .products__link:focus & {
-//     transform: translateY(0%);
-//   }
-// }
-
 .products__item {
   background-color: var(--primary-white-color);
 
@@ -44,14 +31,16 @@
   color: var(--primary-white-color);
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform var(--duration) var(--speed),
-    opacity var(--duration) var(--speed);
+    opacity var(--duration) var(--speed),
+    visibility var(--duration) var(--speed);
 
   .products__link:hover &,
   .products__link:focus & {
     transform: translateY(0%);
-    transition: transform var(--duration) var(--speed),
-      opacity var(--duration) var(--speed);
     opacity: 1;
+    transition: transform var(--duration) var(--speed),
+      opacity var(--duration) var(--speed),
+      visibility var(--duration) var(--speed);
   }
 }
 
@@ -81,18 +70,13 @@
   line-height: 1.87;
 }
 
-// @media screen and (min-width: 320px) {
-//   .products__content {
-//     width: 100%;
-//     height: auto;
-//   }
-
-//   .products__overlay {
-//     padding: 15% 5%;
-//     @include font(16px, 400);
-//     line-height: 1.4;
-//   }
-// }
+@media screen and (max-width: 479px) {
+  .products__overlay {
+    padding: 15% 5%;
+    @include font(16px, 400);
+    overflow: auto;
+  }
+}
 
 // .products {
 //   display: flex;
