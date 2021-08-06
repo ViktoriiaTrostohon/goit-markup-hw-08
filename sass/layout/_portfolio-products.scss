@@ -74,7 +74,35 @@
   .products__overlay {
     padding: 15% 5%;
     @include font(16px, 400);
-    overflow: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      display: flex;
+      width: calc((100% - 60px) / 2);
+
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+    }
+
+    &__overlay {
+      padding: 49px 24px;
+    }
+
+    &__link {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__description {
+      flex-grow: 1;
+    }
   }
 }
 
