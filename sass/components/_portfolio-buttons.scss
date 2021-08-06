@@ -1,8 +1,5 @@
-.section {
-  padding-top: 60px;
-}
-
 .buttons-geometry {
+  padding-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -66,7 +63,7 @@
 
 @media screen and (min-width: 768px) {
   .buttons-geometry {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .buttons {
@@ -81,6 +78,7 @@
 
 @media screen and (min-width: 1200px) {
   .buttons-geometry {
-    margin-bottom: 50px;
+    padding-top: 4px;
+    margin-bottom: 34px;
   }
 }
