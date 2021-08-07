@@ -1,14 +1,12 @@
+.link {
+  text-decoration: none;
+}
+
 .burger-button {
   background-color: transparent;
   border: none;
   padding: 0;
   line-height: 0;
-
-  //   &:hover,
-  //   &:focus {
-  //     fill: var(--accent-color);
-  //     transition: fill var(--duration) var(--speed);
-  //   }
 
   &__icon {
     width: 40px;
@@ -30,6 +28,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
   background-color: var(--primary-white-color);
   opacity: 0;
   visibility: hidden;
@@ -63,12 +62,6 @@
   line-height: 0;
   border-color: transparent;
 
-  //   &:hover,
-  //   &:focus {
-  //     fill: var(--accent-color);
-  //     transition: fill var(--duration) var(--speed);
-  //   }
-
   &__icon {
     width: 40px;
     height: 40px;
@@ -80,6 +73,84 @@
       transition: fill var(--duration) var(--speed);
     }
   }
+}
+
+.mobile-nav__item {
+  @include font(40px, 500);
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &:last-child {
+    margin-bottom: 302px;
+  }
+}
+
+.mobile-nav__link {
+  color: var(--title-text-color);
+
+  &:hover {
+    color: var(--accent-color);
+    transition: color var(--duration) var(--speed);
+  }
+}
+
+// .mobile-contacts__point--bigger {
+//   @include font(34px, 500);
+//   line-height: 1.17;
+// }
+.mobile-contacts {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 64px;
+
+  &__point:last-child {
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    color: var(--main-text-color);
+    @include font(24px, 500);
+    line-height: 1.17;
+
+    &--bigger {
+      @include font(34px, 500);
+      color: currentColor;
+    }
+
+    &:hover,
+    &--bigger:hover {
+      color: var(--accent-color);
+    }
+  }
+}
+
+.mobile-social-networks {
+  display: flex;
+  padding-bottom: 48px;
+
+  &__item {
+    padding-right: 10px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+
+  &__link {
+    @include font(18px, 500);
+    line-height: 1.22;
+    color: var(--accent-color);
+  }
+}
+
+.mobile-contacts__icon--mail,
+.mobile-contacts__icon--phone {
+  display: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
