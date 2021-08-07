@@ -77,6 +77,9 @@
 <symbol id="icon-icon-send" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M32 0l-32 18 10.227 3.787 15.773-14.787-11.997 16.187 0.009 0.003-0.012-0.003v8.813l5.735-6.691 7.267 2.691 4.999-28z"></path>
 </symbol>
+<symbol id="icon-menu-burger" viewBox="0 0 32 32">
+<path d="M0 8.889v-3.556h32v3.556h-32zM0 17.777h32v-3.555h-32v3.555zM0 26.667h32v-3.556h-32v3.556z"></path>
+</symbol>
 </defs>
 </svg>
 

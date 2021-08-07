@@ -7,12 +7,17 @@
   padding-bottom: 16px;
 }
 
+.header-container {
+  @include centered-flex(flex, center, center);
+}
+
 @media screen and (min-width: 768px) {
   .header-section {
     padding-top: 26px;
     padding-bottom: 26px;
   }
 
+  // Test if these properties are necessary
   .header-container {
     display: flex;
     align-items: center;
