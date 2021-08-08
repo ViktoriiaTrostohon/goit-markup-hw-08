@@ -1,6 +1,6 @@
 .checkbox-label {
   width: 100%;
-  @include centered-flex(inline-flex, center, center);
+  @include centered-flex(inline-flex, center, flex-start);
   margin-bottom: 30px;
   @include font(11px, 400);
   line-height: 1.17;
@@ -33,6 +33,16 @@
   line-height: 1.17;
   color: var(--accent-color);
 }
+
+// @media screen and (min-width: 768px) {
+//   .checkbox-label {
+//     @include font(12px, 400);
+//   }
+
+//   .modal-form-policy-link {
+//     @include font(12px, 400);
+//   }
+// }
 
 @media screen and (min-width: 1200px) {
   .checkbox-label {
