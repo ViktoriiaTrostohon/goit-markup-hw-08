@@ -213,6 +213,7 @@ body {
   top: 0;
   width: 100vw;
   height: 100vh;
+  overflow: scroll;
   background-color: var(--primary-white-color);
   opacity: 0;
   visibility: hidden;
@@ -255,6 +256,10 @@ body {
 .mobile-close-button__icon:hover, .mobile-close-button__icon:focus {
   fill: var(--accent-color);
   transition: fill var(--duration) var(--speed);
+}
+
+.mobile-nav {
+  margin-bottom: 306px;
 }
 
 .mobile-nav__item {
@@ -341,9 +346,6 @@ body {
   .mobile-menu-container__close-button {
     top: 15px;
     right: 20px;
-  }
-  .mobile-menu {
-    overflow: scroll;
   }
 }
 
@@ -1307,7 +1309,7 @@ body {
 }
 
 .form-field__input {
-  min-width: 290px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   padding-left: 16px;
@@ -1456,7 +1458,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .buttons-geometry {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
   }
   .buttons {
     justify-content: center;
@@ -1470,7 +1472,7 @@ body {
 @media screen and (min-width: 1200px) {
   .buttons-geometry {
     padding-top: 4px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
   }
 }
 
