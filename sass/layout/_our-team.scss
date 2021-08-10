@@ -58,6 +58,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .employees {
+    padding-top: 94px;
+  }
+
   .team__employee-card {
     min-width: calc((100% - 120px) / 4);
 
